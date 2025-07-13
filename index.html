@@ -3,50 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>[Your Name] | Portfolio</title>
+  <title>Portfolio | [Parinya Nakseekheaw]</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>[Your Name]</h1>
-      <p>Web Developer | Student | Creative Thinker</p>
+      <h1>[Parinya Nakseekheaw]</h1>
+      <p>| Student |</p>
+      <nav class="nav-buttons">
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('certificates')">Certificates</button>
+        <button onclick="showSection('resume')">Resume</button>
+      </nav>
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am currently a student at [University Name] majoring in [Your Major]. Passionate about creating clean and minimal websites using HTML, CSS, and JavaScript.</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
+  <main class="container">
+    <section id="projects" class="content-section">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>Project One</h3>
-        <p>Short description of your project. What it does, what you learned, and tools used (e.g., HTML, CSS).</p>
-      </div>
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>Another project. Link to GitHub or demo if available.</p>
-      </div>
-    </div>
-  </section>
+      <p>Example Project 1 - Built with HTML, CSS</p>
+      <p>Example Project 2 - JavaScript + APIs</p>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: yourname@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </div>
-  </section>
+    <section id="skills" class="content-section hidden">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript (basic)</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="certificates" class="content-section hidden">
+      <h2>Certificates</h2>
+      <ul>
+        <li>HTML & CSS Fundamentals - [Platform Name]</li>
+        <li>Intro to JavaScript - [Platform Name]</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="content-section hidden">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
       <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
