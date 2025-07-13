@@ -1,15 +1,14 @@
-/* Reset */
+/* Reset + Base */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background: #fff;
   color: #111;
-  margin: 0;
 }
 
 .container {
@@ -19,39 +18,49 @@ body {
 }
 
 header {
-  background-color: #000;
-  color: #fff;
   text-align: center;
   padding: 60px 20px;
-}
-
-header h1 {
-  margin-bottom: 10px;
-}
-
-.nav-buttons {
-  margin-top: 20px;
-}
-
-.nav-buttons button {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
-  padding: 10px 15px;
-  margin: 0 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-.nav-buttons button:hover {
   background-color: #000;
   color: #fff;
 }
 
-.content-section {
+.tab-menu {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.tab-menu ul {
+  list-style: none;
+}
+
+.tab-menu li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.tab-menu a {
+  text-decoration: none;
+  color: #999;
+  font-weight: normal;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.tab-menu a:hover {
+  color: #333;
+}
+
+.tab-menu a.active {
+  font-weight: bold;
+  color: #000;
+}
+
+.tab-content {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .hidden {
@@ -62,5 +71,5 @@ footer {
   text-align: center;
   padding: 30px 10px;
   background-color: #f0f0f0;
-  margin-top: 60px;
+  margin-top: 40px;
 }
