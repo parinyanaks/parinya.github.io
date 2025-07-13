@@ -3,64 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Parinya Nakseekheaw</title>
+  <title>Parinya Nakseekheaw | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h2>About Me</h2>
-      <img src="images/profile.jpg" alt="My profile photo" class="profile-pic" />  
       <h1>Parinya Nakseekheaw</h1>
-      <p>I am currently a student at BangkokUniversity majoring in Computer Science Year 4</p>
-      <nav class="nav-buttons">
-        <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('skills')">Skills</button>
-        <button onclick="showSection('certificates')">Certificates</button>
-        <button onclick="showSection('resume')">Resume</button>
-      </nav>
+      <p>Web Developer | Student | Creative Thinker</p>
     </div>
   </header>
 
+  <nav class="tab-menu">
+    <ul>
+      <li><a href="#" class="tab-link active" data-tab="projects">PROJECTS</a></li>
+      <li><a href="#" class="tab-link" data-tab="skills">SKILLS</a></li>
+      <li><a href="#" class="tab-link" data-tab="certificates">CERTIFICATES</a></li>
+      <li><a href="#" class="tab-link" data-tab="resume">RESUME</a></li>
+    </ul>
+  </nav>
+
   <main class="container">
-    <section id="projects" class="content-section">
+    <section id="projects" class="tab-content">
       <h2>Projects</h2>
       <p>Example Project 1 - Built with HTML, CSS</p>
       <p>Example Project 2 - JavaScript + APIs</p>
     </section>
 
-    <section id="skills" class="content-section hidden">
+    <section id="skills" class="tab-content hidden">
       <h2>Skills</h2>
       <ul>
-        <li>Python</li>
-        <li>Flutter (basic)</li>
-        <li>Develop AI models</li>
-        <li>Git & GitHub</li>
+        <li>HTML / CSS</li>
+        <li>JavaScript (basic)</li>
+        <li>Responsive Design</li>
       </ul>
     </section>
 
-    <section id="certificates" class="content-section hidden">
+    <section id="certificates" class="tab-content hidden">
       <h2>Certificates</h2>
       <ul>
         <li>HTML & CSS Fundamentals - [Platform Name]</li>
-        <li>Intro to JavaScript - [Platform Name]</li>
+        <li>JavaScript Basics - [Platform Name]</li>
       </ul>
     </section>
 
+    <section id="resume" class="tab-content hidden">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+    </section>
+  </main>
+
   <footer>
     <div class="container">
-      <p>&copy; 2025 by Parinya Nakseekheaw. All rights reserved.</p>
+      <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </div>
   </footer>
 
-  <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll('.content-section');
-      sections.forEach(section => {
-        section.classList.add('hidden');
-      });
-      document.getElementById(id).classList.remove('hidden');
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
