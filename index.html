@@ -1,64 +1,85 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parinya Nakseekheaw | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Resume| Parinya Nakseekheaw</title>
+<meta name="description" content="Template HTML + CSS " />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Parinya Nakseekheaw</h1>
-      <p>Web Developer | Student | Creative Thinker</p>
-    </div>
-  </header>
+<div class="container">
+<article class="resume">
+<div class="grid">
+<!-- ===== Sidebar ===== -->
+<aside class="sidebar">
+<img class="avatar" src="IMG_6895.png" alt="โปรไฟล์" />
+<div class="name">ปริญญา นาคสีเขียว</div>
+<div class="nickname">ชื่อเล่น ไตเติ้ล</div>
+<div class="role">Frontend Developer</div>
 
-  <nav class="tab-menu">
-    <ul>
-      <li><a href="#" class="tab-link active" data-tab="projects">PROJECTS</a></li>
-      <li><a href="#" class="tab-link" data-tab="skills">SKILLS</a></li>
-      <li><a href="#" class="tab-link" data-tab="certificates">CERTIFICATES</a></li>
-      <li><a href="#" class="tab-link" data-tab="resume">RESUME</a></li>
-    </ul>
-  </nav>
 
-  <main class="container">
-    <section id="projects" class="tab-content">
-      <h2>Projects</h2>
-      <p>Example Project 1 - Built with HTML, CSS</p>
-      <p>Example Project 2 - JavaScript + APIs</p>
-    </section>
+<div class="section-title">ติดต่อ</div>
+<div class="contact">
+<a href="mailto:you@example.com" title="อีเมล"> parinya.naks@bumail.net</a>
+<a href="tel:+66999999999" title="โทร"> 0952320062</a>
+<a href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer"> linkedin.com/in/yourname</a>
+<a href="https://github.com/yourname" target="_blank" rel="noreferrer"> github.com/yourname</a>
+<div class="muted"> ปทุมธานี, ไทย</div>
+</div>
 
-    <section id="skills" class="tab-content hidden">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML / CSS</li>
-        <li>JavaScript (basic)</li>
-        <li>Responsive Design</li>
-      </ul>
-    </section>
 
-    <section id="certificates" class="tab-content hidden">
-      <h2>Certificates</h2>
-      <ul>
-        <li>HTML & CSS Fundamentals - [Platform Name]</li>
-        <li>JavaScript Basics - [Platform Name]</li>
-      </ul>
-    </section>
+<div class="section-title">ทักษะเด่น</div>
+<div class="chip-list">
+<span class="chip">HTML</span>
+<span class="chip">CSS</span>
+<span class="chip">JavaScript</span>
+<span class="chip">Python</span>
+</div>
 
-    <section id="resume" class="tab-content hidden">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
-    </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-    </div>
-  </footer>
+<div class="section-title">เครื่องมือ</div>
+<div class="chip-list">
+<span class="chip">VS Code</span>
+<span class="chip">Figma</span>
+</div>
 
-  <script src="script.js"></script>
-</body>
+
+<div class="section-title">ภาษา</div>
+<div class="chip-list">
+<span class="chip">ไทย (เจ้าของภาษา)</span>
+<span class="chip">อังกฤษ (B2)</span>
+</div>
+</aside>
+
+
+<!-- ===== Main ===== -->
+<main class="main">
+<div class="headline">
+<span class="tagline">พร้อมเริ่มงานทันที • ย้ายที่ทำงานได้</span>
+<span class="badge">ปรับตัวไว</span>
+<span class="badge">ทำงานเป็นทีม</span>
+<span class="badge">แก้ปัญหาได้ดี</span>
+<span class="badge">พร้อมเรียนรู้สิ่งใหม่ๆเสมอ</span>
+</div>
+
+<section aria-labelledby="experience">
+<h2 id="experience" class="section-title">ประสบการณ์ทำงาน</h2>
+
+
+<div class="item">
+<div>
+<h3>Frontend Developer @ Cativerse</h3>
+<div class="meta">กรุงเทพฯ • ส.ค. 2023 – ปัจจุบัน</div>
+<ul class="bullets">
+<li>ออกแบบและพัฒนาเว็บแอปหาคู่ให้แมว Cativerse ด้วย Flutter</li>
+<li>เทรนโมเดล Ai ตรวจจับภาพหมาและแมว ด้วย Classification</li>
+</ul>
+</div>
+<div class="muted">เต็มเวลา</div>
+</div>
+
+
+<div class="item">
 </html>
